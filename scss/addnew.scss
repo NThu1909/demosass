@@ -1,0 +1,212 @@
+@import "~@fortawesome/fontawesome-free/css/all.css";
+
+.block-center-flex {
+  display: flex;
+  align-items: center;
+}
+.main {
+  text-align: center;
+}
+.header {
+  @extend .block-center-flex;
+  justify-content: space-between;
+  padding: 10px 10%;
+  height: 70px;
+  background-color: #0e64c7;
+  &__left {
+    @extend .block-center-flex;
+    height: 100%;
+    gap: 16px;
+    & .logo img {
+      width: 40px;
+      height: 40px;
+      border-radius: 5px;
+    }
+    & .menu {
+      @extend .block-center-flex;
+      gap: 16px;
+      height: 100%;
+      & .menu--item {
+        color: rgba(255, 255, 255, 0.85);
+        opacity: 1;
+        &:hover {
+          cursor: pointer;
+          opacity: 0.5;
+        }
+      }
+    }
+  }
+  &__right {
+    @extend .block-center-flex;
+    height: 100%;
+
+    & .icons {
+      @extend .block-center-flex;
+      gap: 18px;
+      font-size: 18px;
+      height: 100%;
+      color: rgba(255, 255, 255, 0.85);
+      opacity: 1;
+      & .item--icon {
+        opacity: 1;
+        &:hover {
+          opacity: 0.5;
+          cursor: pointer;
+        }
+      }
+      & .item-hr hr {
+        height: 32px;
+        width: 0.5px;
+        opacity: 0.5;
+      }
+      & .mode {
+        @extend .block-center-flex;
+        gap: 10px;
+        & .dropdown--version-icon {
+          font-size: 14px;
+        }
+        & .dark-light-menu {
+          background-color: #29253e;
+          font-size: 14px;
+          width: 128px;
+          height: 100px;
+          line-height: 26px;
+          padding: 10px 10px;
+          margin-top: 140px;
+          z-index: 999;
+          border-radius: 10px;
+          position: absolute;
+          display: none;
+
+          & .light-mode,
+          .dark-mode,
+          .auto-mode {
+            @extend .block-center-flex;
+            gap: 14px;
+            margin-left: 8px;
+          }
+        }
+        &:hover .dark-light-menu {
+          display: block;
+        }
+      }
+      & .version {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+      }
+    }
+  }
+}
+.addNewUserPage {
+  padding: 20px 30px;
+  & .titleAddNew {
+    color: #484545;
+  }
+  & .desAddnew {
+    padding: 24px 0;
+    font: {
+      size: 16px;
+      weight: 500;
+    }
+
+    color: #484545;
+  }
+  & .input-item {
+    @extend .block-center-flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 12px 0;
+    font: {
+      size: 16px;
+      weight: 600;
+    }
+
+    color: #484545;
+    & > input {
+      width: 400px;
+      height: 26px;
+    }
+    & .input-name,
+    .input-username,
+    .input-email,
+    .input-phone {
+      @extend .block-center-flex;
+      min-width: 160px;
+      gap: 6px;
+    }
+  }
+  & .input-item + .input-item {
+    margin-top: 20px;
+  }
+  & .btn-add-cancel {
+    @extend .block-center-flex;
+    justify-content: center;
+    gap: 10px;
+    & .addnew-btn {
+      border: 1px solid;
+      padding: 8px 10px;
+      width: 100px;
+      font: {
+        size: 16px;
+        weight: 600;
+      }
+      margin: 30px 0;
+      border-radius: 3px;
+      color: white;
+      background-color: #0e64c7;
+      &:hover {
+        opacity: 0.5;
+        cursor: pointer;
+      }
+    }
+    & .cancel-btn {
+      border: 1px solid;
+      padding: 8px 10px;
+      width: 100px;
+      margin: 30px 0;
+      border-radius: 3px;
+      color: aliceblue;
+      background-color: #ffc107;
+      font: {
+        size: 16px;
+        weight: 500;
+      }
+      & a {
+        text-decoration: none;
+        color: aliceblue;
+        font-weight: 600;
+      }
+      &:hover {
+        opacity: 0.6;
+        cursor: pointer;
+      }
+    }
+  }
+}
+//Footer
+.footer {
+  position: absolute;
+  background-color: rgb(36, 35, 35);
+  height: 50px;
+  width: 100%;
+  bottom: 0;
+  &-content {
+    height: 100%;
+    @extend .block-center-flex;
+    justify-content: center;
+    color: white;
+
+    font: {
+      size: 12px;
+      style: italic;
+    }
+  }
+}
+.required {
+  color: rgb(196, 28, 28);
+  font: {
+    style: italic;
+    weight: 400;
+  }
+}
