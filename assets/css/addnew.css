@@ -1,10 +1,5 @@
 @import "~@fortawesome/fontawesome-free/css/all.css";
-.block-center-flex, .footer-content, .addNewUserPage .btn-add-cancel, .addNewUserPage .input-item .input-name,
-.addNewUserPage .input-item .input-username,
-.addNewUserPage .input-item .input-email,
-.addNewUserPage .input-item .input-phone, .addNewUserPage .input-item, .header__right .icons .mode .dark-light-menu .light-mode,
-.header__right .icons .mode .dark-light-menu .dark-mode,
-.header__right .icons .mode .dark-light-menu .auto-mode, .header__right .icons .mode, .header__right .icons, .header__right, .header__left .menu, .header__left, .header {
+.block-center-flex, .footer-content, .addnew-user-page .btn-add-cancel, .addnew-user-page .input-items .input-item, .addnew-user-page .input-items, .header__right .icons .mode .dark-light-menu .mode-item, .header__right .icons .mode, .header__right .icons, .header__right, .header__left .menu, .header__left, .header {
   display: flex;
   align-items: center;
 }
@@ -81,9 +76,7 @@
   position: absolute;
   display: none;
 }
-.header__right .icons .mode .dark-light-menu .light-mode,
-.header__right .icons .mode .dark-light-menu .dark-mode,
-.header__right .icons .mode .dark-light-menu .auto-mode {
+.header__right .icons .mode .dark-light-menu .mode-item {
   gap: 14px;
   margin-left: 8px;
 }
@@ -96,19 +89,19 @@
   gap: 10px;
 }
 
-.addNewUserPage {
+.addnew-user-page {
   padding: 20px 30px;
 }
-.addNewUserPage .titleAddNew {
+.addnew-user-page .titleAddNew {
   color: #484545;
 }
-.addNewUserPage .desAddnew {
+.addnew-user-page .desAddnew {
   padding: 24px 0;
   font-size: 16px;
   font-weight: 500;
   color: #484545;
 }
-.addNewUserPage .input-item {
+.addnew-user-page .input-items {
   justify-content: center;
   gap: 10px;
   padding: 12px 0;
@@ -116,25 +109,22 @@
   font-weight: 600;
   color: #484545;
 }
-.addNewUserPage .input-item > input {
+.addnew-user-page .input-items > input {
   width: 400px;
   height: 26px;
 }
-.addNewUserPage .input-item .input-name,
-.addNewUserPage .input-item .input-username,
-.addNewUserPage .input-item .input-email,
-.addNewUserPage .input-item .input-phone {
+.addnew-user-page .input-items .input-item {
   min-width: 160px;
   gap: 6px;
 }
-.addNewUserPage .input-item + .input-item {
+.addnew-user-page .input-items + .input-items {
   margin-top: 20px;
 }
-.addNewUserPage .btn-add-cancel {
+.addnew-user-page .btn-add-cancel {
   justify-content: center;
   gap: 10px;
 }
-.addNewUserPage .btn-add-cancel .addnew-btn {
+.addnew-user-page .btn-add-cancel .addnew-btn {
   border: 1px solid;
   padding: 8px 10px;
   width: 100px;
@@ -145,11 +135,11 @@
   color: white;
   background-color: #0e64c7;
 }
-.addNewUserPage .btn-add-cancel .addnew-btn:hover {
+.addnew-user-page .btn-add-cancel .addnew-btn:hover {
   opacity: 0.5;
   cursor: pointer;
 }
-.addNewUserPage .btn-add-cancel .cancel-btn {
+.addnew-user-page .btn-add-cancel .cancel-btn {
   border: 1px solid;
   padding: 8px 10px;
   width: 100px;
@@ -160,12 +150,12 @@
   font-size: 16px;
   font-weight: 500;
 }
-.addNewUserPage .btn-add-cancel .cancel-btn a {
+.addnew-user-page .btn-add-cancel .cancel-btn a {
   text-decoration: none;
   color: aliceblue;
   font-weight: 600;
 }
-.addNewUserPage .btn-add-cancel .cancel-btn:hover {
+.addnew-user-page .btn-add-cancel .cancel-btn:hover {
   opacity: 0.6;
   cursor: pointer;
 }

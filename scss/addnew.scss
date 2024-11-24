@@ -17,16 +17,18 @@
     @extend .block-center-flex;
     height: 100%;
     gap: 16px;
-    & .logo img {
-      width: 40px;
-      height: 40px;
-      border-radius: 5px;
+    .logo {
+      img {
+        width: 40px;
+        height: 40px;
+        border-radius: 5px;
+      }
     }
     & .menu {
       @extend .block-center-flex;
       gap: 16px;
       height: 100%;
-      & .menu--item {
+      .menu--item {
         color: rgba(255, 255, 255, 0.85);
         opacity: 1;
         &:hover {
@@ -40,32 +42,34 @@
     @extend .block-center-flex;
     height: 100%;
 
-    & .icons {
+    .icons {
       @extend .block-center-flex;
       gap: 18px;
       font-size: 18px;
       height: 100%;
       color: rgba(255, 255, 255, 0.85);
       opacity: 1;
-      & .item--icon {
+      .item--icon {
         opacity: 1;
         &:hover {
           opacity: 0.5;
           cursor: pointer;
         }
       }
-      & .item-hr hr {
-        height: 32px;
-        width: 0.5px;
-        opacity: 0.5;
+      .item-hr {
+        hr {
+          height: 32px;
+          width: 0.5px;
+          opacity: 0.5;
+        }
       }
-      & .mode {
+      .mode {
         @extend .block-center-flex;
         gap: 10px;
-        & .dropdown--version-icon {
+        .dropdown--version-icon {
           font-size: 14px;
         }
-        & .dark-light-menu {
+        .dark-light-menu {
           background-color: #29253e;
           font-size: 14px;
           width: 128px;
@@ -78,19 +82,19 @@
           position: absolute;
           display: none;
 
-          & .light-mode,
-          .dark-mode,
-          .auto-mode {
+          .mode-item {
             @extend .block-center-flex;
             gap: 14px;
             margin-left: 8px;
           }
         }
-        &:hover .dark-light-menu {
-          display: block;
+        &:hover {
+          .dark-light-menu {
+            display: block;
+          }
         }
       }
-      & .version {
+      .version {
         display: flex;
         justify-content: center;
         gap: 10px;
@@ -98,12 +102,12 @@
     }
   }
 }
-.addNewUserPage {
+.addnew-user-page {
   padding: 20px 30px;
-  & .titleAddNew {
+  .titleAddNew {
     color: #484545;
   }
-  & .desAddnew {
+  .desAddnew {
     padding: 24px 0;
     font: {
       size: 16px;
@@ -112,7 +116,7 @@
 
     color: #484545;
   }
-  & .input-item {
+  .input-items {
     @extend .block-center-flex;
     justify-content: center;
     gap: 10px;
@@ -127,23 +131,20 @@
       width: 400px;
       height: 26px;
     }
-    & .input-name,
-    .input-username,
-    .input-email,
-    .input-phone {
+    .input-item {
       @extend .block-center-flex;
       min-width: 160px;
       gap: 6px;
     }
   }
-  & .input-item + .input-item {
+  .input-items + .input-items {
     margin-top: 20px;
   }
-  & .btn-add-cancel {
+  .btn-add-cancel {
     @extend .block-center-flex;
     justify-content: center;
     gap: 10px;
-    & .addnew-btn {
+    .addnew-btn {
       border: 1px solid;
       padding: 8px 10px;
       width: 100px;
@@ -160,7 +161,7 @@
         cursor: pointer;
       }
     }
-    & .cancel-btn {
+    .cancel-btn {
       border: 1px solid;
       padding: 8px 10px;
       width: 100px;
